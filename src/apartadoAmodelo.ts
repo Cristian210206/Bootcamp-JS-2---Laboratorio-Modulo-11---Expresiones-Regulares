@@ -1,0 +1,48 @@
+export const listaBancos: {codigoBanco:string, nombreBanco:string}[] = [
+    { codigoBanco: "2080", nombreBanco: "Abanca Corporación Bancaria" },
+    { codigoBanco: "0061", nombreBanco: "Banca March" },
+    { codigoBanco: "0188", nombreBanco: "Banco Alcalá" },
+    { codigoBanco: "0182", nombreBanco: "Banco Bilbao Vizcaya Argentaria" },
+    { codigoBanco: "0130", nombreBanco: "Banco Caixa Geral" },
+    { codigoBanco: "0234", nombreBanco: "Banco Caminos" },
+    { codigoBanco: "2105", nombreBanco: "Banco Castilla-La Mancha" },
+    { codigoBanco: "0240", nombreBanco: "Banco de Crédito Social Cooperativo" },
+    { codigoBanco: "0081", nombreBanco: "Banco de Sabadell" },
+    { codigoBanco: "0487", nombreBanco: "Banco Mare Nostrum" },
+    { codigoBanco: "0186", nombreBanco: "Banco Mediolanum" },
+    { codigoBanco: "0238", nombreBanco: "Banco Pastor" },
+    { codigoBanco: "0075", nombreBanco: "Banco Popular Español" },
+    { codigoBanco: "0049", nombreBanco: "Banco Santander" },
+    { codigoBanco: "3873", nombreBanco: "Banco Santander Totta" },
+    { codigoBanco: "2038", nombreBanco: "Bankia" },
+    { codigoBanco: "0128", nombreBanco: "Bankinter" },
+    { codigoBanco: "0138", nombreBanco: "Bankoa" },
+    { codigoBanco: "0152", nombreBanco: "Barclays Bank PLC" },
+    { codigoBanco: "3842", nombreBanco: "BNP Paribas Paris" },
+    { codigoBanco: "3025", nombreBanco: "Caixa de Credit del Enginyers" },
+    { codigoBanco: "2100", nombreBanco: "Caixabank" },
+    { codigoBanco: "2045", nombreBanco: "Caja de Ahorros y Monte de Piedad de Ontinyent" },
+    { codigoBanco: "3035", nombreBanco: "Caja Laboral Popular CC" },
+    { codigoBanco: "3081", nombreBanco: "Caja Rural Castilla-La Mancha" },
+    { codigoBanco: "3058", nombreBanco: "Cajamar Caja Rural" },
+    { codigoBanco: "2000", nombreBanco: "Cecabank" },
+    { codigoBanco: "1474", nombreBanco: "Citibank Europe PLC" },
+    { codigoBanco: "3821", nombreBanco: "Commerzbank AG" },
+    { codigoBanco: "3877", nombreBanco: "Danske Bank A/S" },
+    { codigoBanco: "0019", nombreBanco: "Deutsche Bank SAE" },
+    { codigoBanco: "0239", nombreBanco: "EVO Banco" },
+    { codigoBanco: "2085", nombreBanco: "Ibercaja Banco" },
+    { codigoBanco: "1465", nombreBanco: "ING Bank NV" },
+    { codigoBanco: "2095", nombreBanco: "Kutxabank" },
+    { codigoBanco: "2048", nombreBanco: "Liberbank" },
+    { codigoBanco: "0131", nombreBanco: "Novo Banco" },
+    { codigoBanco: "0073", nombreBanco: "Open Bank" },
+    { codigoBanco: "0108", nombreBanco: "Société Générale" },
+    { codigoBanco: "2103", nombreBanco: "Unicaja Banco" },
+]
+
+export const bloqueHTML = document.getElementById("contenidoApartadoAscript")
+
+export const botonHTML = document.getElementById("botonVerificar");
+
+export const validacionIBAN = /^(?<codigoPais>[A-Z]{2})(\s|-)?(?<digitoControl1>[0-9]{2})(\s|-)?(?<codBanco>[0-9]{4})(\s|-)?(?<codSucursal>[0-9]{4})(\s|-)?(?<digitoControl2>[0-9]{2})(\s|-)?(?<numCuenta>[0-9]{10})$/gm
