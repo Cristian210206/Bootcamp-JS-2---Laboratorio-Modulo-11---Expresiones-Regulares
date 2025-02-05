@@ -1,5 +1,5 @@
-#apartadoA {
-  margin: auto;
+.apartado {
+  margin: 2vh auto;
   width: 90%;
   border-radius: 5px;
   border: solid, 1px, black;
@@ -10,8 +10,26 @@
   margin-left: 10px;
 }
 
-#contenidoApartadoA {
+.contenidoApartado {
   margin: auto;
   margin-bottom: 20px;
   width: 90%;
+}
+
+#apartadoB {
+  display: flex;
+  flex-direction: column;
+}
+
+#htmlInsertado {
+  padding: 2vh;
+}
+
+#botonExtraer {
+  padding: 1vh;
+  margin: 2vh 0;
+}
+
+#apartadoB p {
+  margin-bottom:1vh;
 }

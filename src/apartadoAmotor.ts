@@ -1,9 +1,9 @@
 import { listaBancos } from "./apartadoAmodelo";
 
-export const crearParrafo = (mensaje: string, bloque: HTMLDivElement) => {
+export const crearParrafo = (mensaje:string) => {
     const parrafo = document.createElement("p");
-    parrafo.innerText= mensaje;
-    bloque.appendChild(parrafo);
+    parrafo.innerText = mensaje
+    return parrafo;
 }
 
 export const traerValorInsertado = () => {
@@ -15,8 +15,11 @@ export const traerValorInsertado = () => {
     }
 }
 
-export const sacarBanco = (codigoBanco: string, bloque:HTMLDivElement) => {
+export const sacarBanco = (codigoBanco: string) => {
     const banco =listaBancos.find((banco) => banco.codigoBanco == codigoBanco);
-    crearParrafo(`Banco: ${banco?.nombreBanco}`, bloque)
+    if (banco) {
+        return banco?.nombreBanco;
+    }
+    return "Banco no encontrado"
 }
 
