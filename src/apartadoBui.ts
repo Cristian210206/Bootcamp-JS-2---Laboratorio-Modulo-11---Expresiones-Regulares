@@ -5,16 +5,12 @@ import { traerValorInsertadoB } from "./apartadoBmotor";
 
 export const sacarEnlaces = () => {
     const texto = traerValorInsertadoB()
-    const enlaces = regexEnlace.exec(texto);
+    const enlaces = texto.match(regexEnlace);
     console.log(`${enlaces}`)
     if (enlaces) {
-        const {enlaceImagen} = enlaces.groups as any;
-        console.log(`${enlaceImagen}`)
-        if (bloqueHTMLB && bloqueHTMLB instanceof HTMLDivElement) {
-            const parrafo = crearParrafoB(`${enlaceImagen}`);
-            bloqueHTMLB.appendChild(parrafo);
-        }
-        ;
-        
+        enlaces.forEach((enlace) => {
+            const parrafo = crearParrafoB(enlace);
+            bloqueHTMLB?.appendChild(parrafo);            
+        })
     }
 }
